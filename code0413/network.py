@@ -39,8 +39,8 @@ class ClassifyNetworkV0(nn.Module):
 
 
 def tt01():
-    in_features = 4
-    net = ClassifyNetworkV0(in_features, num_classes=3)
+    in_features = 4 #输入的维度大小
+    net = ClassifyNetworkV0(in_features=in_features, num_classes=3)
     print("=" * 100)
     for _name, _param in net.named_parameters():
         print(_name, _param.requires_grad, _param)
